@@ -1,0 +1,15 @@
+1) GRADLE (Module :app) - dependencies { }: add the Material library if it is not there already.
+   Newer projects often already have:  implementation(libs.material)
+   If not, add:
+       implementation("com.google.android.material:material:1.12.0")
+   Then Sync Now. (Needed for MaterialToolbar and NavigationView.)
+
+2) THEME - res/values/themes.xml (and res/values-night/themes.xml if present).
+   Your Toolbar clashes with the default App Bar unless the theme is a NoActionBar one.
+   Change the parent of your app theme (name may be Theme.Lab1 or similar) to:
+       <style name="Theme.Lab1" parent="Theme.Material3.DayNight.NoActionBar">
+   Keep your own style name; change only the parent.
+
+3) After syncing: Build -> Assemble Project (or Rebuild). This generates
+   DashboardFragmentDirections, AddTenantFragmentDirections and ViewTenantsFragmentArgs.
+   Those names stay red until a build has run.

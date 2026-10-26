@@ -1,0 +1,5 @@
+<resources>
+    <!-- NoActionBar parent: we supply our own MaterialToolbar (Practical 3).
+         Keep your own style name if it differs; change only the parent. -->
+    <style name="Theme.Lab1" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ID MUST equal the nav graph destination ID: navigation then needs no extra code -->
+    <item
+        android:id="@+id/viewTenantsFragment"
+        android:title="View Tenants"
+        app:showAsAction="never" />
+
+    <!-- Handled by hand in MainActivity.onOptionsItemSelected -->
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
